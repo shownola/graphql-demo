@@ -1,0 +1,19 @@
+Here are some of the commands:
+
+  $ rails new graphql-demo --api --skip-test --skip-spring
+
+  graphql-demo $ rails g model Post title body:text
+
+  $ rails g model Author name
+
+  $ rails g migration add_author_to_posts author:references
+
+  $ rails g graphql:object Post title:String body:Text author:references
+
+   $ rails g graphql:object Post title:String body:Text author:references
+
+   $ rails g graphql:object Author name:String post:has_many
+
+   $ rails g graphql:mutation CreateAuthorMutation
+
+    $ rails g graphql:mutation CreatePostMutation
